@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Color Game</title>
+    <link rel="shurtcut icon"
+        href="https://www.xrite.com/-/media/modules/weblog/blog/color-perception-part-1-the-effect-of-light/additivecolorcirclescmykpng.png?la=en&hash=58A07AE209C8AFCA3DE524EDBE11C841245CE272"
+        type="image/ico" sizes="32x32">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="colorGame.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Fredoka+One|Poiret+One|Encode+Sans+Expanded|Cardo|Dancing+Script"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="upperPage">
+        <button class="collapsible"><i class="fas fa-info"></i>&nbsp;Game Information</button>
+        <div class="content">
+            <p>In the RGB color model, the red, green and blue light are added together in various ways to reproduce a
+                broad array of colors.
+                <br> The name of the model comes from the initials of these three primary colors.
+                <br> <span style="font-size: 1.5vw">In this game, the goal is to choose from a number of colored
+                    squares, which is the one that matches the RGB value in the title.</span></p>
+        </div>
+        <h1 id="pc">The <span id="colorLetters" style="color:red">R</span><span id="colorLetters"
+                style="color:lightgreen">G</span><span id="colorLetters" style="color:blue">B</span>&nbsp;Color Game
+        </h1>
+        <h1 id="mobile">The <span id="colorLetters" style="color:red">R</span><span id="colorLetters"
+                style="color:lightgreen">G</span><span id="colorLetters" style="color:blue">B</span>&nbsp;Color Game
+        </h1>
+        <h2>Choose the color:<br><span id="colorDisplay">RGB </span>
+        </h2>
+    </div>
+
+    <div id="messageArea">
+        <button id="reset">New Colors</button>
+        <span id="message"></span>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Difficulty&nbsp;<i class="fas fa-caret-down"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <button id="easy">Rookie</button>
+                <br>
+                <button id="hard">Pro</button>
+                <br>
+                <button class="selected" id="veryHard">Expert</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <footer>
+        <p>Designed & developed by
+            <br><span class="signature">Eliran Buskila - Web Developer. &copy;</span></p>
+    </footer>
+
+
+    <script type="text/javascript" src="colorGame.js"></script>
+
+</body>
+
+</html>

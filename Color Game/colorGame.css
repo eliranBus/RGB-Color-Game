@@ -1,0 +1,278 @@
+body {
+    background-image: url(https://bhckids.org/wp-content/uploads/2015/04/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+}
+#upperPage {
+    background-color: #65CCF5;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.1;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    transition: background 0.7s;
+    --webkit-tranition: background 0.7s;
+    --moz-tranition: background 0.7s;
+}
+#messageArea {
+    background-color: #FFFFFF;
+    text-align: center;
+    color: black;
+    height: 25px;
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    font-size: 1.4vw;
+    letter-spacing: 1.5px;
+}
+#message {
+    display: inline-block;
+    width: 40%;
+}
+.dropbtn {
+    cursor: pointer;
+    letter-spacing: 2.5px;
+}
+#reset {
+    cursor: pointer;
+    letter-spacing: 2.5px;
+}
+.square {
+    width: 30%;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    border-radius: 30%;
+    transition: background 0.7s;
+    cursor: pointer;
+    --webkit-tranition: background 0.7s;
+    --moz-tranition: background 0.7s;
+}
+.square:hover {
+    opacity: 0.7;
+}
+.selected {
+    background-color: #6482A9;
+}
+#container {
+    margin: 3px auto;
+    max-width: 45%;
+}
+#pc {
+        display: block;
+    }
+    #mobile {
+        display: none;
+    }
+@media only screen and (max-width:866px) {
+    /* For tablets: */
+    #container {
+        margin: 10px auto;
+        max-width: 70%;
+    }
+    #pc {
+        display: none;
+    }
+    #mobile {
+        display: block;
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 2.8vw;
+    }
+    #messageArea {
+        font-size: 2.2vw;
+    }
+}
+@media only screen and (max-width:550px) {
+    /* For mobile phones: */
+    #container {
+        margin: 10px auto;
+        max-width: 90%;
+        height: 40%;
+        margin-bottom: -60px;
+    }
+    #pc {
+        display: none;
+    }
+    #mobile {
+        display: block;
+        font-size: 1.7em;
+        margin-top: 15px;
+    }
+    h2 {
+        font-size: 2.8vw;
+    }
+    .square {
+        width: 30%;
+    }
+    #upperPage {
+        line-height: 1.3;
+    }
+    #messageArea {
+        font-size: 2.8vw;
+    }
+    footer {
+        margin-top: 30em;
+    }
+}
+#colorDisplay {
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 500;
+}
+#colorLetters {
+    font-size: 7.8vw;
+    text-shadow: 2px 2px 5px black;
+}
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes grow-right {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 4.8vw;
+    line-height: 0.2;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fade-in-right ease 1.7s forwards;
+    animation-delay: 0.4s;
+    padding-bottom: 0.1vw;
+    margin-top: 0%;
+}
+h2 {
+    color: black;
+    font-weight: normal;
+    line-height: 1.2;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 100 transform: scaleX(0);
+    transform-origin: right;
+    animation: grow-right cubic-bezier(0.2, 0.135, 0.15, 0.86) 0.8s forwards;
+    animation-delay: 0s;
+    margin-bottom: 0.7vw;
+}
+button {
+    border: none;
+    background: none;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 0.3s;
+    --webkit-tranition: all 0.3s;
+    --moz-tranition: all 0.3s;
+    outline: none;
+}
+button.selected {
+    color: white;
+}
+button:hover {
+    color: white;
+    background-color: #6482A9;
+}
+.dropdown {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    height: 150px;
+
+}
+.dropdown-content button {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    height: 32.5%;
+    margin-bottom: -20px;
+}
+.dropdown a:hover {
+    background-color: #ddd;
+}
+.show {
+    display: block;
+}
+.collapsible {
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: auto;
+    border: none;
+    text-align: left;
+    outline: none;
+    text-shadow: 2px 2px 5px black;
+    font-size: 1.5vw;
+    margin-left: -80%;
+    margin-top: 1%;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+}
+.active,
+.collapsible:hover {
+    background-color: transparent;
+    color: black;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Cardo', serif;
+    bottom: 0;
+    clear: both;
+    margin-left: 50%;
+    margin-top: 40em;
+    transform: translate(-50%, 0);
+    width: 100%;
+    
+}
+.signature {
+    font-family: 'Dancing Script', cursive;
+    color: lightgray;
+    font-weight: 600;
+    font-size: 18px;
+}
